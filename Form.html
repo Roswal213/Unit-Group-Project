@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .item-2{
+            align-items: flex-start;        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <ul>
+                <li><label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName"></li>
+                <li><label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName"></li>
+                <li><label for="Email">Email</label>
+                <input type="text" id="Email" name="Email"></li>
+                <li><label for="Phone">Phone Number</label>
+                <input type="text" id="Phone" name="Phone" maxlength="11"></li>
+                <li><label for="Address">Address</label>
+                <input type="text" id="Address" name="Address"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Your Pool design</legend>
+            <div class="grid-container">
+                <div class="item-1">
+                    <li><select>
+                        <option value="0">Select Pool Size</option>
+                        <option value="1">15x30 ft</option>
+                        <option value="2">15x20 ft</option>
+                        <option value="3">10x20 ft</option>
+                        <option value="4">10x10 ft</option>
+                    </select></li>
+                </div>
+                <div class="item-2">
+                    <strong><p>Extra emmenities</p></strong>
+                    <li><input type="checkbox">
+                      <label for="Spa">Spa</label></li>
+                      <li><input type="checkbox">
+                      <label for="Waterfall">Waterfall</label></li>
+                      <li><input type="checkbox">
+                      <label for="Loveseat">Loveseat</label></li>
+                  </div>
+                  <div class="item-3">
+                    <strong><p>Pool Materials</p></strong>
+                    <li><input type="checkbox">
+                        <label for="Concrete">Spa</label></li>
+                        <li><input type="checkbox">
+                        <label for="Fiberglass">Fiberglass</label></li>
+                        <li><input type="checkbox">
+                        <label for="Vinyl">Vinyl</label></li>
+                </div>
+            </div>
+            <ul>
+                    
+            </ul>
+
+        </fieldset>
+    </form>
+</body>
+</html>
