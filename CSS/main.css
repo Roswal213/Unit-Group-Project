@@ -66,12 +66,8 @@ body {
     grid-template-columns: auto auto auto;
     overflow: hidden;
     background-color: #e9e9e9;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
     width: 100%;
     border-top: 3px solid steelblue;
-    visibility: hidden;
 }
 
 #item-1 {
@@ -131,7 +127,7 @@ body {
 #item-2-4 img {
   max-width: 60%;
   padding: 20%;
-  padding-top: 5%;
+  padding-top: 20%;
 }
 #content h1 {
   color: white;
