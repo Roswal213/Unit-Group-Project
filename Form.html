@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <form>
+    <form action="index.html">
         <fieldset>
             <legend>Contact Information</legend>
             <ul>
@@ -53,19 +53,29 @@
                   </div>
                   <div class="item-3">
                     <strong><p>Pool Materials</p></strong>
-                    <li><input type="checkbox">
-                        <label for="Concrete">Spa</label></li>
-                        <li><input type="checkbox">
+                    <li><input type="radio" name="materials">
+                        <label for="Concrete">Concrete</label></li>
+                        <li><input type="radio" name="materials">
                         <label for="Fiberglass">Fiberglass</label></li>
-                        <li><input type="checkbox">
+                        <li><input type="radio" name="materials">
                         <label for="Vinyl">Vinyl</label></li>
                 </div>
             </div>
             <ul>
                     
             </ul>
-
         </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <div>
+                <textarea name="comment" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button type=”submit”>Submit your Work</button>
+            </div>
+            
+        </fieldset>
+
     </form>
 </body>
 </html>
