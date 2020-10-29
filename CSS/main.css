@@ -211,6 +211,14 @@ body {
 #Gallery .images:hover {
   filter: contrast(10%);
 }
+/*Order Form*/
+
+.grid-container2 #logo {
+  padding: 15%;
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
 /*
 @media screen and (max-width: 600px) {
   .topnav .search-container {
