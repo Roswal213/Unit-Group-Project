@@ -10,9 +10,28 @@
         .grid-container{
             display: grid;
             grid-template-columns: auto auto auto;
+            
         }
         .item-2{
-            align-items: flex-start;        }
+            align-items: flex-start;        
+            }
+        .grid-container2{
+            display: grid;
+            background-image: url(images/poolbackgorund2.jpg);
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+        
+        }
+        fieldset{
+            padding:10px;
+            color: steelblue;
+            background-color: #e9e9e9;
+        }
+        legend{
+            padding:20px;
+            
+        }
     </style>
 </head>
 <body>
@@ -32,25 +51,26 @@
         <h1 id="logo">Pools and Spas</h1>
         <hr id="underline">
       </div>
-
+      <div class="grid-container2">
+          <h1 id="logo">Order Form</h1>
+    </div>
     <form>
         <fieldset>
-            <legend>Contact Information</legend>
-            <ul>
-                <li><label for="firstName">First name</label>
-                <input type="text" id="firstName" name="firstName"></li>
-                <li><label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="lastName"></li>
-                <li><label for="Email">Email</label>
-                <input type="text" id="Email" name="Email"></li>
-                <li><label for="Phone">Phone Number</label>
-                <input type="text" id="Phone" name="Phone" maxlength="11"></li>
-                <li><label for="Address">Address</label>
-                <input type="text" id="Address" name="Address"></li>
-            </ul>
+            <legend><strong>Contact Information</strong></legend>
+             
+                <div><label for="firstName">First name*</label></div>
+                <div><input type="text" id="firstName" name="firstName" placeholder="Enter First Name Here"></div>
+                <div><label for="lastName">Last name*</label></div>
+                <div><input type="text" id="lastName" name="lastName" placeholder="Enter Last Name Here"></div>
+                <div><label for="Email">Email*</label></div>
+                <div><input type="text" id="Email" name="Email" placeholder="Enter Email Address Here"></div>
+                <div><label for="Phone">Phone Number*</label></div>
+                <div><input type="text" id="Phone" name="Phone" placeholder="Enter Phone Number Here" maxlength="11"></div>
+                <div><label for="Address">Address*</label></div>
+                <div><input type="text" id="Address" name="Address" placeholder="Enter Your Address Here"></div>
         </fieldset>
         <fieldset>
-            <legend>Your Pool design</legend>
+            <legend><strong>Your Pool design</strong></legend>
             <div class="grid-container">
                 <div class="item-1">
                     <li><select>
@@ -84,19 +104,18 @@
                     
             </ul>
         </fieldset>
-        <fieldset>
-            <legend>Comments</legend>
-            <div>
-                <textarea name="comment" id="comments" cols="30" rows="10"></textarea>
-            </div>
-            <div class="button">
-                <button type=”submit”>Submit your Work</button>
-            </div>
-            
-        </fieldset>
-
     </form>
-
+    <form method="get" action="index.html">
+    <fieldset>
+        <legend>Comments</legend>
+        <div>
+            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comments or concerns here."></textarea>
+        </div>
+        <div class="button">
+            <button type=”submit”>Submit your Work</button>
+        </div>
+    </form>
+    </fieldset>
     <div id="footer">
         <div id="item-1" class="items">
             <p>Saturday: 10:00AM - 4:00PM</p>
